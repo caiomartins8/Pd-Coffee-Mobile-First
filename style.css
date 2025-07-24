@@ -1,0 +1,172 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue';
+}
+
+body{
+    background-color: #ffdbbc;
+
+}
+
+figcaption {
+    display: none;
+}
+
+/*HEADER*/
+header {
+    background-color: #2C1812;
+    width: 100%;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+li {
+    list-style-type: none;
+    flex: 1;
+    text-align: center;
+}
+
+header a {
+    color: #B18E6E;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+}
+
+#menu {
+    width: 20px;
+    height: auto;
+}
+
+header figure {
+    margin: 0;
+}
+
+/*MAIN*/
+ 
+
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#banner-coffee {
+    width: 100%;
+   
+}
+
+/*SOBRE NOS*/
+
+#sec-sobrenos{
+    width: 100%;
+    text-align: center;
+    margin-top: 7vh ;
+}
+
+#sec-sobrenos h1 {
+    font-size: 2rem;
+    color: #44322D;
+}
+
+#conteudo-sobrenos{
+    background-color:#44322D ;
+    display: flex;
+    padding: 1rem;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#conteudo-sobrenos p {
+    color :#FFC28E;
+    font-size: 0.8rem;
+}
+
+#conteudo-sobrenos div {
+    border: 1px solid #FFC28E;
+    padding: 2vw;
+    text-align: start;
+}
+
+/*CARDAPIO*/
+
+#sec-cardapio{
+    margin-top: 7vh;
+    text-align: center;
+}
+
+#sec-cardapio article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center ;
+}
+
+
+#sec-cardapio h1 {
+     font-size: 2rem;
+    color: #1D0A05;
+}
+
+#sec-cardapio article figure {
+    width: 80%;
+}
+
+#sec-cardapio article figure img {
+    width: 100%;
+    box-shadow: 10px 10px 12px 2px rgba(0, 0, 0, 0.6);}
+
+#sec-cardapio article h2 {
+    font-size: 1.2rem;
+    color:#1D0A05 ;
+}
+
+.preco {
+    background-color: #44322D;
+    color: #FFC28E;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec-cardapio article button {
+    background-color: #1D0A05;
+color: #FFC28E;
+font-size: 1.3rem;
+width: 80%;
+margin-top: 7px;
+border: none;
+}
+
+#fundo-sec-cardapio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFC28E;
+    flex-direction: row;
+    padding: 2vw;
+}
+
+
+
+/*LOCALIZAÇÃO E HORÁRIOS*/
