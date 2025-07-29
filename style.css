@@ -1,12 +1,17 @@
+/*VERSÃP MOBILE*/
+
 * {
+
 
     margin: 0;
     padding: 0;
-    font-family: 'Bebas Neue';
+
 }
 
-body{
+
+body {
     background-color: #ffdbbc;
+    font-family: 'Bebas Neue';
 
 }
 
@@ -14,7 +19,16 @@ figcaption {
     display: none;
 }
 
+
+
 /*HEADER*/
+
+
+/*html{
+    scroll-behavior: smooth;
+}*/
+
+
 header {
     background-color: #2C1812;
     width: 100%;
@@ -28,14 +42,16 @@ header nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    gap: 10px;
+    padding: 10px 10px;
+    gap: 6px;
+
 }
 
 li {
     list-style-type: none;
     flex: 1;
     text-align: center;
+    cursor: pointer;
 }
 
 header a {
@@ -59,7 +75,7 @@ header figure {
 }
 
 /*MAIN*/
- 
+
 
 
 main {
@@ -70,15 +86,23 @@ main {
 
 #banner-coffee {
     width: 100%;
-   
+
+}
+
+#banner-coffee-desktop {
+display: none;
 }
 
 /*SOBRE NOS*/
 
-#sec-sobrenos{
+#sec-sobrenos {
     width: 100%;
     text-align: center;
-    margin-top: 7vh ;
+    margin-top: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 #sec-sobrenos h1 {
@@ -86,30 +110,61 @@ main {
     color: #44322D;
 }
 
-#conteudo-sobrenos{
-    background-color:#44322D ;
+#conteudo-sobrenos {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 4vh;
+}
+
+.box-sobrenos {
     display: flex;
-    padding: 1rem;
-    gap: 10px;
+    flex-direction: row;
+    background-color: #44322D;
+    height: auto;
+    overflow: hidden;
+}
+
+#atendente-sobrenos-desktop{
+    display: none;
+}
+.lado-esquerdo,
+.lado-direito {
+    width: 50%;
+}
+
+.lado-esquerdo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.lado-direito {
+    display: flex;
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: center;
+    padding: 2vh 2vw;
 }
 
-#conteudo-sobrenos p {
-    color :#FFC28E;
-    font-size: 0.8rem;
+.lado-direito p {
+    color: #FFC28E;
+    font-size: 0.9rem;
+    text-align: left;
 }
 
-#conteudo-sobrenos div {
-    border: 1px solid #FFC28E;
-    padding: 2vw;
-    text-align: start;
-}
+
+
+ #img-atendente-desktop {
+        display: none;
+    }
 
 /*CARDAPIO*/
 
-#sec-cardapio{
+.descricao-desktop{
+    display: none;
+}
+
+#sec-cardapio {
     margin-top: 7vh;
     text-align: center;
 }
@@ -118,12 +173,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:center ;
+    align-items: center;
 }
 
 
 #sec-cardapio h1 {
-     font-size: 2rem;
+    font-size: 2rem;
     color: #1D0A05;
 }
 
@@ -133,11 +188,12 @@ main {
 
 #sec-cardapio article figure img {
     width: 100%;
-    box-shadow: 10px 10px 12px 2px rgba(0, 0, 0, 0.6);}
+    box-shadow: 10px 10px 12px 2px rgba(0, 0, 0, 0.6);
+}
 
 #sec-cardapio article h2 {
     font-size: 1.2rem;
-    color:#1D0A05 ;
+    color: #1D0A05;
 }
 
 .preco {
@@ -151,14 +207,16 @@ main {
 
 #sec-cardapio article button {
     background-color: #1D0A05;
-color: #FFC28E;
-font-size: 1.3rem;
-width: 80%;
-margin-top: 7px;
-border: none;
+    color: #FFC28E;
+    font-size: 1.3rem;
+    width: 80%;
+    font-family:'Bebas Neue' ;
+    margin-top: 7px;
+    border: none;
+    cursor: pointer;
 }
 
-#fundo-sec-cardapio{
+#fundo-sec-cardapio {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -170,3 +228,391 @@ border: none;
 
 
 /*LOCALIZAÇÃO E HORÁRIOS*/
+
+
+#sec-loc{
+    width: 100%;
+    margin-top: 7vh;
+    text-align: center;
+}
+#sec-loc h1 {
+    color :#68372A;
+font-size: 2rem;
+}
+
+#fundo-sec-loc{
+    background-color: #68372A;
+    color: #ffdbbc;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+#fundo-sec-loc figure{
+    width: 50% ;
+}
+
+#fundo-sec-loc figure img{
+    width: 100% ;
+}
+
+#span-sub{
+    font-size: 1rem;
+}
+
+#span-titulo{
+    font-size: 2rem ;
+}
+
+#fundo-sec-loc h2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+    #fundo-sec-loc figure img {
+        height: 100%;
+    }
+
+.hora-inicial,
+.hora-final{
+    font-size: 3rem;
+}
+
+
+.horario-funcionamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fundo-sec-loc div  a {
+    text-decoration: none;
+    color: #ffdbbc;
+    font-size: 0.8rem;
+    text-align: center;
+
+
+}
+
+
+#alinhamento-txt-banner-loc{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    width: 50%;
+}
+
+#localizador{
+    width: 11px;
+    height: 10px;
+}
+
+
+
+
+/*FOOTER*/
+
+footer h1 {
+    font-size: 1.7rem;
+}
+
+footer {
+    margin-top: 8vh;
+    background-image: url(imagens/tijolinho.jpg);
+    background-size: 140%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 100%;
+    gap: 10px;
+    height: 15vh;
+
+}
+
+#redes-sociais {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+footer div figure img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*VERSÃO TABLET*/
+
+@media (min-width: 768px) {
+
+    /*HEADER*/
+
+    header a {
+        font-size: 1.5rem;
+    }
+
+    #menu {
+        width: 40px;
+        height: auto;
+    }
+
+    #logo {
+        width: 100px;
+        height: auto;
+    }
+
+    /*SOBRE NÓS*/
+
+    #sec-sobrenos h1 {
+        font-size: 3.5rem;
+    }
+
+    #conteudo-sobrenos p {
+        font-size: 1.5rem;
+    }
+
+    /*CARDÁPIO*/
+
+    #sec-cardapio h1 {
+        font-size: 3.5rem;
+    }
+
+    #sec-cardapio article h2 {
+        font-size: 2rem;
+    }
+
+    .preco {
+        margin-top: 1vh;
+        width: 50%;
+        font-size: 1.4rem;
+    }
+
+    #sec-cardapio article button {
+        font-size: 2em;
+    }
+
+    /*LOCALIZAÇÃO E HORÁRIOS*/
+
+   #span-sub{
+    font-size: 2rem;
+}
+
+#span-titulo {
+    font-size: 4rem;
+}
+
+.hora-inicial, .hora-final {
+    font-size: 7rem;
+}
+
+#localizador {
+    width: 21px;
+    height: 21px;
+}
+#fundo-sec-loc div a {
+    
+    font-size: 1.5rem;
+}
+
+#alinhamento-txt-banner-loc {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-evenly;
+  
+}
+    /*FOOTER*/
+
+    footer h1 {
+        font-size: 3rem;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+    }
+
+    footer div figure img {
+        width: 70px;
+        height: 70px;
+    }
+
+
+}
+
+
+
+
+
+
+
+/*VERSÃO DESKTOP*/
+
+@media (min-width: 1024px) {
+
+     
+    /*HEADER*/
+
+    header a {
+        font-size: 2rem;
+    }
+
+    /*MAIN*/
+
+    #banner-coffee-desktop{
+        display: flex;
+        width: 100%;
+
+    }
+
+      #banner-coffee{
+        display: none;
+        
+    }
+
+    /*SOBRE NÓS*/
+
+    #conteudo-sobrenos div {
+   
+    height: 100%;
+   
+}
+
+#conteudo-sobrenos img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    #atendente-sobrenos-desktop{
+    display: flex;
+}
+
+
+
+    
+#conteudo-sobrenos {
+   height: 40vh;}
+   #conteudo-sobrenos figure {
+    width: 50%;
+    height: 100%;
+}
+
+#conteudo-sobrenos p {
+        font-size: 1.2rem;
+    }
+
+    /*CARDÁPIO*/
+
+        #sec-cardapio article h2 {
+        font-size: 2.5rem;
+    }
+
+   
+
+        .preco {
+        width: 40%;
+        font-size: 1.7rem;
+    }
+#sec-cardapio article button {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#sec-cardapio article figure img {
+    width: 70%;
+    box-shadow: 10px 10px 12px 2px rgba(0, 0, 0, 0.6);
+}
+    /*LOCALIZAÇÃO E HORÁRIOS*/
+    #fundo-sec-loc figure img {
+        height: 100%;
+    }
+        #loc-hora {
+        height: 100%;
+    }
+
+        #span-cafe {
+        font-size: 2.5rem;
+        }
+
+                #span-saint {
+        font-size: 4.5rem;
+    }
+
+            .hora {
+        font-size: 6rem;
+    }
+    
+    #as {
+        font-size: 3rem;
+    }
+
+        #loc-hora a {
+        font-size: 1.8rem;
+    }
+
+    #fundo-sec-loc {
+    
+    height: 90vh;
+}
+
+.descricao-desktop{
+    display: flex;
+    margin-top:2vh ;
+            width: 40%;
+    border: solid 1px #1D0A05;
+    padding: 1vw;
+    color: #1D0A05;
+    background-color: #FFC28E;
+}
+#fundo-sec-loc figure {
+    width: 50%;
+    height: 100%;
+}
+
+    /*FOOTER*/
+
+   footer {
+   
+    height: 25vh;
+}
+
+footer h1 {
+        font-size: 4rem;
+    }
+
+    #redes-sociais {
+   
+    justify-content: center;
+    gap: 20px;}
+
+    footer div figure img {
+        width: 80px;
+        height: 80px;
+        gap: 30px;
+    }
+
+}
