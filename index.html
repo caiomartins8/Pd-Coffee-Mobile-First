@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pd Coffee || Home</title>
+    <link rel="icon" href="imagens/logo.png" type="image/png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,27 +17,112 @@
 
     <header>
         <nav>
-
             <ul>
                 <li>
-                    <figure><img src="imagens/logo.png" alt="" id="logo">
+                    <figure>
+                        <img src="imagens/logo.png" alt="Logo Pd Coffee" id="logo">
                         <figcaption>Logo Pd Coffee</figcaption>
                     </figure>
                 </li>
-                <li><a href="#sec-sobrenos">Sobre Nós</a></li>
-
-                <li><a href="#sec-cardapio">Cardápio</a></li>
-                <li><a href="#sec-loc">Localização </a></li>
+                <li class="hover-slide"><a href="#sec-sobrenos">Sobre Nós</a></li>
+                <li class="hover-slide"><a href="#sec-cardapio">Cardápio</a></li>
+                <li class="hover-slide"><a href="#sec-loc">Localização</a></li>
                 <li>
-                    <figure><img src="imagens/menu.svg" alt="" id="menu">
-                        <figcaption>Menu hamburguer</figcaption>
-                    </figure>
+                    <label for="menu-toggle" class="menu-label">
+                        <img src="imagens/menu.svg" alt="Menu hamburguer" id="menu">
+                    </label>
                 </li>
             </ul>
-
         </nav>
-
     </header>
+
+    <input type="checkbox" id="menu-toggle" hidden />
+
+    <div class="menu-overlay">
+        <div class="menu-box">
+            <div class="menu-top">
+                <img src="imagens/logo.png" alt="Logo Pd Coffee" class="menu-logo">
+                <label for="menu-toggle" class="close-button">✕</label>
+            </div>
+
+            <div class="menu-icons">
+                <label for="toggle-carrinho" class="item">
+                    <img src="imagens/carrinho.svg" alt="">
+                    <p><strong>CARRINHO</strong></p>
+                </label>
+
+                <div class="item">
+                    <img src="imagens/perfil.svg" alt="">
+                    <p><strong>PERFIL</strong></p>
+                </div>
+                <div class="item">
+                    <img src="imagens/fone suporte.svg" alt="">
+                    <p><strong>SUPORTE</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="toggle-carrinho" hidden>
+
+    <div class="overlay"></div>
+    <aside>
+
+
+        <div id="conteudo-carrinho">
+            <label for="toggle-carrinho" id="fechar-carrinho" style="float:right; cursor: pointer;">✕</label>
+
+
+            <br>
+            <h1>SACOLA</h1>
+            <div id="item-carrinho">
+                <figure><img src="imagens/cupcake - quadrado.jpg" alt=""></figure>
+
+                <div>
+                    <h2>cupcake de chocolate</h2>
+                    <p>Massa leve com toque de baunilha, recheio <br> e cobertura de ganache..</p>
+                    <h3>R$14,90</h3>
+                </div>
+
+                <div id="adicionar-produto">
+                    <p>
+                        <span>-</span>
+                        <span>1</span>
+                        <span>+</span>
+                    </p>
+                </div>
+
+
+            </div>
+            <br>
+            <div id="item-carrinho">
+                <figure><img src="imagens/capuccino - quadrado.jpg" alt=""></figure>
+
+                <div>
+                    <h2>Capuccino de canela</h2>
+                    <p>Espresso encorpado com leite cremoso <br> e toque de canela. </p>
+                    <h3>R$12,90</h3>
+                </div>
+
+                <div id="adicionar-produto">
+                    <p>
+                        <span>-</span>
+                        <span>1</span>
+                        <span>+</span>
+                    </p>
+                </div>
+
+
+            </div>
+            <br>
+            <button>prosseguir para pagamento</button>
+        </div>
+
+    </aside>
+
+    <label for="toggle-carrinho" class="fundo-preto-carrinho"></label>
+
+
 
     <main>
         <figure><img src="imagens/bannercoffe.png" alt="" id="banner-coffee">
@@ -54,7 +141,7 @@
             <div id="conteudo-sobrenos">
                 <div class="box-sobrenos">
                     <div class="lado-esquerdo">
-                        <img src="imagens/foto sobre nos.png" alt="">
+                        <img src="imagens/foto sobre nos.jpg" alt="">
                     </div>
                     <div class="lado-direito">
                         <p>
@@ -70,7 +157,7 @@
                 </div>
             </div>
 
-            
+
         </section>
 
 
@@ -80,7 +167,7 @@
             <h1>CARDÁPIPO</h1>
 
 
-<br>
+            <br><br>
             <div id="fundo-sec-cardapio">
                 <article>
                     <h2> Fatia de bolo <br> de chocolate</h2>
@@ -88,7 +175,7 @@
                         <img src="imagens/bolo.jpg" alt="Bolo de Chocolate">
                     </figure>
                     <div class="descricao-desktop">
-                        <p>massa úmida e intensa coberta com ganache cremosa e raspas de chocolate</p>
+                        <p>massa úmida e intensa coberta com ganache cremosa .</p>
                     </div>
                     <div class="preco">R$23,00</div>
                     <button>eu quero !</button>
@@ -139,7 +226,7 @@
             </div>
 
             <h1>LOCALIZAÇÃO E HORÁRIOS</h1>
-<br>
+            <br><br>
             <div id="fundo-sec-loc">
 
 
@@ -159,7 +246,8 @@
 
 
                     <a href="https://www.google.com/maps?q=Boulevard+Saint-Germain,+112,+Paris,+França" target="_blank">
-                       <img src="imagens/lucalizador.svg" alt="" id="localizador"> Boulevard Saint-Germain, 112 – 6ème Arrondissement
+                        <img src="imagens/lucalizador.svg" alt="" id="localizador"> Boulevard Saint-Germain, 112 – 6ème
+                        Arrondissement
                     </a>
 
 
@@ -185,24 +273,28 @@
 
     <footer>
         <div>
-            <h1>2025 PD COFFEE</h1>
+            <h1> © 2025 PD COFFEE</h1>
             <p>Confira nosso termos e políticas de privacidade</p>
         </div>
 
         <div id="redes-sociais">
-            <a href="">
+            <a href="https://www.instagram.com/" target="_blank">
                 <figure><img src="imagens/insta.svg" alt="logo instagram"></figure>
             </a>
-            <a href="">
+            <a href="https://pt-br.facebook.com/" target="_blank">
                 <figure><img src="imagens/face.svg" alt="logo facebook"></figure>
             </a>
-            <a href="">
+            <a href="https://web.whatsapp.com/" target="_blank">
                 <figure><img src="imagens/whats.svg" alt="logo whatsapp"></figure>
             </a>
 
 
         </div>
     </footer>
+
+
+
+
 
 </body>
 
